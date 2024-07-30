@@ -1,0 +1,99 @@
+/* Profil Page Styles */
+.profile-page {
+  background: #ffffff; /* Warna latar belakang putih */
+  padding: 40px;
+  border-radius: 12px; /* Sudut membulat */
+  max-width: 600px; /* Lebar maksimum kontainer */
+  margin: 40px auto; /* Pusatkan di tengah halaman dengan spasi atas dan bawah */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek kedalaman */
+  text-align: center; /* Pusatkan teks */
+  font-family: 'Arial', sans-serif; /* Font yang bersih dan modern */
+}
+
+.profile-container {
+  width: 790px;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  overflow: hidden;
+  border: 5px solid #007bff; /* Border biru untuk efek visual */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+  margin-bottom: 20px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.profile-header h1 {
+  font-size: 36px;
+  color: #333; /* Warna teks gelap untuk kontras yang baik */
+  margin-bottom: 20px; /* Spasi di bawah judul */
+}
+
+.profile-info {
+  background: #f8f9fa; /* Latar belakang abu-abu lembut */
+  padding: 20px;
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  font-size: 18px;
+  color: #555; /* Warna teks abu-abu lembut */
+}
+
+.profile-info p {
+  margin: 10px 0; /* Spasi vertikal antar paragraf */
+}
+
+.profile-info p strong {
+  color: #007bff; /* Warna aksen biru untuk label */
+  font-weight: 600; /* Menebalkan label */
+}
+
+.profile-info p:hover {
+  color: #333; /* Ubah warna teks saat hover */
+}
+
+.profile-info p strong:hover {
+  text-decoration: underline; /* Garis bawah label saat hover */
+}
+
+/* Responsif untuk perangkat mobile */
+/* @media (max-width: 768px) {
+  .profile-container{
+    max-width: 20rem;
+    margin-top: 2.4rem;
+  }
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-header h1 {
+    font-size: 28px;
+  }
+
+  .profile-info {
+    padding: 15px;
+  }
+} */

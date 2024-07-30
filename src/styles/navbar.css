@@ -1,0 +1,73 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: calc(100% - 250px); /* Adjust to match sidebar width */
+  background-color: #3498db; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s, margin-left 0.3s;
+  z-index: 1000;
+}
+
+.navbar.expanded {
+  width: calc(100% - 250px); /* When sidebar is expanded */
+  margin-left: 250px;
+}
+
+.navbar.collapsed {
+  width: calc(100% - 60px); /* When sidebar is collapsed */
+  margin-left: 60px;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-dropdown,
+.settings-dropdown {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.profile-dropdown.open,
+.settings-dropdown.open {
+  display: block;
+}
+
+.settings-dropdown p,
+.profile-dropdown p {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.settings-dropdown p:hover,
+.profile-dropdown p:hover {
+  color: #3498db;
+}
+
+.icon:hover {
+  color: #2980b9;
+}

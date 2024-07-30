@@ -1,0 +1,167 @@
+/* src/styles/loginPages.css */
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: .8;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for zoom-in animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for fade-in animation for inputs and buttons */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* src/styles/loginPages.css */
+
+/* Keyframes for zoom-out animation */
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7); /* More drastic scaling effect */
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 0.7s ease-out forwards; /* Extended duration for smoother effect */
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* Adjust animation duration and easing */
+  animation: zoomIn 1s ease-out;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adjust animation duration and easing */
+  animation: fadeIn 1s ease-out;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+  /* Adjust animation duration and easing */
+  animation: fadeInUp 1s ease-out;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 40px; /* Space for the toggle icon */
+}
+
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Position the icon inside the input field */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  /* Adjust animation duration and easing */
+  animation: fadeInUp 1s; /* Delay animation for better effect */
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Toastify container to ensure it appears above other elements */
+.toastify-container {
+  z-index: 9999;
+}
